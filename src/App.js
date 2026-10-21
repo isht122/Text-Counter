@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react';
 import Alert from './component/Alert';
 import About from './component/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Features from './component/Features';
 
 function App() {
   const [Mode, setMode] = useState(false);
@@ -34,13 +35,15 @@ function App() {
     <Alert alert={alert}/>
     <div className="container my-3">
       <Routes>
-        <Route exact path="/" element={<Textform heading="Enter the text to analyze below" />} />
+        <Route exact path="/" element={<Textform heading="Try Text Counter - Word Counter, Character Counter" showAlert={showAlert} />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/features" element={<Features />} />
       </Routes>
     </div>
     </Router>   
     
    </>
+  );
 }
 
 export default App;

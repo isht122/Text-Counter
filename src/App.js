@@ -30,7 +30,7 @@ function App() {
 
   return (
     <> 
-    <Router> 
+    <Router basename={process.env.PUBLIC_URL}> 
     <Navbar title="Text Counter" aboutText="About Text Counter" mode={Mode} toggleMode={toggleDarkMode}/>  
     <Alert alert={alert}/>
     <div className="container my-3">

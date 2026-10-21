@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://isht122.github.io/my-app",
+  "homepage": "https://isht122.github.io/Text-Counter",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.2",
